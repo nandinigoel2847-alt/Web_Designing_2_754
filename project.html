@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Smart Wallet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>💳 AI Smart Wallet</h1>
+
+    <div class="card">
+        <h2>User Profile</h2>
+
+        <input type="text" id="username" placeholder="Your Name">
+
+        <input type="text" id="upi" placeholder="Your UPI ID">
+
+        <h3>Wallet Balance: ₹<span id="balance">0</span></h3>
+
+        <input type="number" id="addMoney" placeholder="Enter Amount">
+
+        <button onclick="addMoney()">Add Money</button>
+    </div>
+
+    <div class="card">
+        <h2>Send Money</h2>
+
+        <input type="text" id="receiverName" placeholder="Receiver Name">
+
+        <input type="text" id="receiverUpi" placeholder="Receiver UPI ID">
+
+        <input type="number" id="amount" placeholder="Amount">
+
+        <button onclick="sendMoney()">Send Payment</button>
+    </div>
+
+    <div class="card">
+        <h2>📊 AI Spending Analysis</h2>
+        <p id="analysis">No transactions yet.</p>
+    </div>
+
+    <div class="card">
+        <h2>❤️ Financial Health Score</h2>
+        <h3 id="score">100/100</h3>
+    </div>
+
+    <div class="card">
+        <h2>💡 AI Budget Advisor</h2>
+        <p id="advisor">Waiting for analysis...</p>
+    </div>
+
+    <div class="card">
+        <h2>🤖 AI Assistant</h2>
+
+        <input type="text" id="question"
+        placeholder="Ask: balance, score, transactions">
+
+        <button onclick="askBot()">Ask AI</button>
+
+        <p id="answer"></p>
+    </div>
+
+    <div class="card">
+        <h2>📜 Transaction History</h2>
+        <ul id="history"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
